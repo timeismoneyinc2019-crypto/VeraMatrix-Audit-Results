@@ -4,7 +4,73 @@ Public repository for all functional, security, and compliance test results of t
 
 ## Project Links
 - **Main Repository:** https://github.com/timeismoneyinc2019-crypto/VeraMatrix
-- **License:** Network Deployment License (NDL) v4.0
+- **License:** ================================================================================
+NEXORIAN DETERMINISTIC LICENSE (NDL)
+Version: 4.2 (Industrial Hardened Edition)
+Effective Date: April 28, 2026
+================================================================================
+Copyright (c) 2026 Nexorian Corporation / Dennis W. Merritt. All Rights Reserved.
+
+PROJECT IDENTIFICATION:
+- Software / Project Name: VeraMatrix (VeriMatrix MD)
+- Primary IP Holder: Nexorian Corporation
+- Author / Principal Engineer: Dennis W. Merritt
+- Target System Interface (RSI): DAGM-RSI (Distributed Autonomous Governance Model)
+- Protected System State Kernel: HardenedDek1Kernel / SovereignState Bridge
+
+1. GRANT OF LICENSE
+The Licensor grants the Licensee a non-exclusive, non-transferable right to 
+integrate the VeraMatrix Autonomy Stack into industrial hardware. This license 
+is contingent upon total adherence to the ALU-Only Mandate.
+
+2. DETERMINISTIC COMPLIANCE MANDATES
+Licensee agrees that the following standards are non-negotiable for safety-critical 
+deployment:
+• The Integer-Only Mandate: All arithmetic within the decision kernel must occur 
+  in the Arithmetic Logic Unit (ALU) using 64-bit scaling (10^8). The use of 
+  Floating-Point Units (FPU) or IEEE-754 instructions is strictly prohibited 
+  in the primary execution path.
+• Instructional Fence: Deployment requires hardware-level Data Memory Barriers 
+  (DMB SY) and Bit Set/Reset Register (BSRR) atomic masking to ensure sequential 
+  consistency.
+• Bilateral Verification: Licensee must maintain a bit-identical match between 
+  the embedded execution and the External Forensic Auditor. Any variance in the 
+  SHA-3-256 state signature constitutes a total failure of compliance.
+
+3. OPERATIONAL RESTRICTIONS
+Licensee shall not:
+• Modify or bypass the Entropy Gate stability thresholds (including the 
+  core invariant drift threshold ceiling of >0.25 within user-space).
+• Attempt to process non-scaled decimal values within the decision kernel.
+• Alter or obscure the cryptographic Forensic Ledger, which serves as the 
+  "Black Box" record for insurance and liability audit.
+
+4. LIMITATION OF LIABILITY
+THE SOFTWARE IS PROVIDED "AS IS." As the system enforces a deterministic path, 
+the Licensor is not liable for hardware-level kinetic failures resulting from 
+external environmental factors or non-compliant implementation of the 
+Integer-Only Mandate.
+
+5. GOVERNING LAW
+This Agreement is governed by the laws of the State of North Dakota, USA.
+
+================================================================================
+SECURITY POLICY FOR VERAMATRIX
+================================================================================
+## Supported Versions
+Only the current main branch receives active security updates and invariant 
+gating reviews.
+
+## Reporting a Vulnerability
+If you discover a vulnerability or a method to bypass the core drift threshold 
+(>0.25) or the 0x9999 SovereignState::HardLockdown payload mapping without 
+triggering an immediate containment sequence, DO NOT open a public GitHub issue.
+
+Email a full disclosure report directly to the security team at Nexorian 
+Corporation (Attention: Dennis W. Merritt). We will evaluate the invariant 
+breach and coordinate a safe, private remediation patch.
+================================================================================
+
 
 ## Repository Structure
 
